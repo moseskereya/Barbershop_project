@@ -1,0 +1,526 @@
+body{
+    padding:0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.title{
+    font-size:40px;
+    font-display: initial;
+    color: #022140;
+    position: absolute;
+    font-style:initial;
+    color: #fff;
+    font-family: san-serif;
+}
+.title span{
+    color:orange;
+}
+.nav{
+    width:100%;
+    height:80px;
+    background-color:rgba(3, 27, 37, 0.644);
+    position: relative;
+}
+.nav .nav_header{
+    display: inline;
+}
+.nav .nav_header .nav_title{
+    display: inline-block;
+    font-size: 22px;
+    color: #002e5b;
+    padding: 10px;
+}
+.nav .nav_btn{
+display: none;
+}
+.nav .nav_link{
+font-size:18px;
+display: inline-block;
+float:right;
+}
+@media(max-width:700px){
+    .title{
+        font-size:25px;
+    }
+}
+.nav .nav_link a{
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+    display: inline-block;
+    padding:10px 40px;
+}
+.nav_link a:hover{
+    background-color: #fff;
+    color:#ebae08da;
+}
+.nav #nav_check{
+    display: none;
+}
+.creative span{
+    color:orange;
+    font-style: oblique;
+}
+@media(max-width:700px){
+    .nav .nav_btn{
+        display: inline-block;
+        position:absolute;
+        top:0;
+        right:0;
+    }
+    .nav .nav_btn label{
+        display:inline-block;
+        width:50px;
+        height:50px;
+        padding:13px;
+    }
+    .nav .nav_btn label:hover{
+        background-color: e9d226;
+    }
+    .nav .nav_btn label span{
+        display: block;
+        width:25px;
+        height:10px;
+        border-top:2px solid#fff;
+    }
+    .nav .nav_link{
+        position:absolute;
+        width:100%;
+        background:rgba(240, 240, 240, 0.644);
+        display: block;
+        color:#022140;
+        height:0;
+        transition: .5s all ease-in-out;
+        overflow-y: hidden;
+        top:50px;
+        left:0;
+    }
+    .center{
+        display: none;
+    }
+    .nav .nav_link a{
+        text-align:center;
+        width:100%;
+        display: block;
+    }
+    .nav #nav_check:not(:checked) + .nav_link{
+        height:0;
+    }
+    .nav #nav_check:checked + .nav_link{
+        height:280px;
+        overflow-y:auto;
+    }
+}
+.container{
+    background-image:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("https://as2.ftcdn.net/jpg/01/01/03/73/500_F_101037312_qXsfQoDKvvCyBFcv9LRkME8ChG9B4W2l.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    background-size: cover;
+}
+.center{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.center h2{
+    color:#fff;
+    font-size: 30px;
+    text-align: center;
+}
+.center h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color:#fff;
+    font-size: 30px;
+    text-align: center;
+}
+.container span{
+    color:orange;
+    font-style: italic;
+}
+@media(max-width:700px){
+    .container{
+    height:700px;    
+    }
+}
+.center a{
+    display: flex;
+    justify-content:center;
+    text-decoration: none;
+    padding:10px 30px;
+    color:#fff;
+    border-end-end-radius: 10px;
+    border:1px solid#fff;
+    width:80px;
+    margin:10px auto;
+    background-color: rgba(246, 255, 252, 0.644);
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.box h3{
+    color:#002e5b;
+    font-size:20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.box span{
+    color:orange;
+}
+.box1{
+display: flex;
+width: 100%;
+justify-content:center;
+background-color: rgba(240, 240, 240, 0.644);
+}
+.box1_content{
+text-align: center;
+margin:10px auto;
+padding:0 50px;
+}
+@media(max-width:800px){
+    .box1_content{
+        width:100%;
+        height:300px;
+    }
+}
+.flex-div{
+    display:flex;
+    width:100%;
+   justify-content:center;
+    flex-wrap:wrap;
+  }
+  .flex-div .items{
+    width:500px;
+    height:500px;
+  }
+  .flex-div .items img{
+    width:100%;
+    height:100%;
+  }
+  @media (max-width:800px){
+    .flex-div{
+      flex-direction:column;
+    }
+    .items{
+    margin: 10px;
+    background-color: rgb(21, 219, 219);
+    }
+  }
+  .creative h3{
+    color:#022140;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    font-size:30px;
+    align-items:center;
+  }
+  .footer{
+    display:flex;
+    padding:20px;
+    background-color:rgba(3, 27, 37, 0.644);
+     
+  }
+  .footer .item1{
+    flex:1;
+    padding:10px;
+    margin:0;
+    color:#022140;
+  }
+  #join{
+    width:80px;
+    height:36px
+  }
+  @media (max-width:800px){
+   .footer{
+     flex-direction:column; 
+     margin: 10px auto;
+    }
+  }
+  input{
+    padding:10px;
+    border:2px solidrgb(168, 195, 209);
+  }
+  .items .fab{
+      display: flex;
+      width:100%;
+      justify-content: center;
+  }
+  .fab{
+      margin: 10px;
+      font-size:20px;
+      color:orange;
+      cursor: pointer;
+  }
+  @media(max-width:800px){
+  .fab{
+    display: inline;
+      }
+  }
+  .me img{
+    width:150px;
+    height:200px;
+    cursor: pointer;
+  }
+  .showcase1{
+    display:flex;
+    width:100%;
+    justify-content:center;
+  }
+  .showcase1 h2{
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    margin:10px;
+    color:#022140;
+  }
+  .content{
+    display:flex;
+    width:100%;
+    flex-wrap:wrap;
+  }
+  .showcase1 h2 span{
+      color:orange;
+      font-style: italic;
+  }
+  .items2 img{
+   cursor:pointer; 
+    width:500px;
+    height:400px;
+  }
+  .items2 img:hover{
+   background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .items2{
+    flex:1;
+    padding:10px;
+    margin:10px;
+    border:1px solid#fff;
+  }
+  .paragraph{
+    padding:10px;
+    text-align:center;
+  }
+  .paragraph p{
+    font-size:16px;
+    color:#022140;
+  }
+  .paragraph h2{
+    color: #022140;
+    text-transform:uppercase;
+    font-size:14px;
+  }
+  .paragraph hr{
+    width:50px;
+  }
+  .clicks{
+    padding:10px 40px;
+    text-decoration:none;
+    margin:5px;
+    border:1px solid #fff;
+    background-color:orange;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transition: .9s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:#000;
+  }
+
+  .clicks:hover{
+    background-color:rgba(240, 240, 240, 0.644);
+    color:#022140;
+    border:1px solid #fff;
+  }
+  @media (max-width:800px){
+   figure{
+     flex-direction:column; 
+    }
+  }
+  @media (max-width:800px){
+   .content{
+     flex-direction:column; 
+    }
+    .paragraph{
+        flex-direction: column;
+    }
+  }
+  .iframes{
+width:100%;
+display: flex;
+flex-wrap: wrap;
+}
+.span{
+  width:50%;
+  height:500px;
+}
+.span img{
+  width:100%;
+  height:100%;
+  cursor: pointer;
+  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content_span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(3, 27, 37, 0.644);
+  width:100%;
+  height:100%;
+}
+@media(max-width:800px){
+  .iframes{
+    flex-direction: column;
+    width:800px;
+  }
+}
+.span_{
+  text-align:center
+}
+.span_ h4{
+  text-decoration-style: double;
+  font-size: 30px;
+  color:orange;
+}
+.span_ hr{
+  width:20%;
+}
+.span_ p{
+  padding:10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: whitesmoke;
+}
+.iframe2{
+  display: flex;
+  width:100%;
+  flex-wrap: wrap; 
+}
+.span2{
+  width:50%;
+  height:500px;
+}
+.span2 img{
+  width:100%;
+  height:100%;
+}
+.moses_{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  height:100%;
+  align-items: center;
+  background-color:rgba(3, 27, 37, 0.644);
+}
+.moses_ span{
+  color:#52e3c2;
+}
+.moses_ h2{
+  font-size:70px;
+}
+@media (max-width:800px){
+  .iframe2{
+    flex-direction:column;
+    width:800px; 
+   }
+ }
+ .container__2{
+   background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(./images/barber-barbershop-hairdresser-897256.jpg);
+   height:60vh;
+   width: 100%;
+   background-position: center;
+   background-attachment: scroll;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+ .flex1{
+   display: flex;
+   width:100%;
+   height:100px;
+   border:1px solid #fff;
+ }
+ .flex_1{
+flex:1;
+ }
+ .flex_1 h3{
+   color: #52e3c2;
+  text-align: center;
+ }
+ .flex_1 h4{
+   text-align:center;
+   color:#fff;
+ }
+ @media(max-width:800px){
+  .flex1{
+    flex-direction:column;
+    text-align: center;
+    width: 100%;
+  }
+ }
+ .benneth{
+   display: flex;
+   justify-content: center;
+   background-color:orange;
+ }
+ .benneth h5{
+   font-size: 20px;
+ }
+ .benneth span{
+   color:#fff;
+ }
+ div.vertical-line{
+  background-color: silver;
+  height: 100%;
+  float: right;
+  border: 1px solid white;
+background-color:teal;
+}
+#map{
+  height:500px;
+  width:100%;
+}
+.consistence{
+  display:flex;
+  width:100%;
+  justify-content:center;
+}
+.consistence-div{
+  padding: 20px;
+  width:700px;
+}
+.consistence-div img{
+  width:100%;
+  cursor:pointer;
+}
+.consistence a{
+  margin:40px auto;
+  text-decoration:none;
+  padding:10px 40px;
+  background-color:orange;
+  color:#fff;
+  transition:.9s ease;
+}
+.consistence a:hover{
+  padding:10px 50px;
+}
+.content-consist h4{
+  font-size:30px;
+  color:#022140;
+  text-align: center;
+}
+@media (max-width:800px){
+  .consistence{
+    flex-direction:column;
+  }
+  .content-consist{
+    width:800px;
+  }
+  .consistence-div{
+    width:100%;
+  }
+.content-consist{
+  width:100%;
+}
+}
